@@ -1,0 +1,5 @@
+﻿De tudo que vimos nesse projeto, devemos evitar o uso do 
+anti-pattern ServiceLocator, da Property Injection e da dependência de
+uma única interface em múltiplas classes.
+Tudo que foi apresentado serve de conhecimento, onde em casos extremos e bem específicos 
+poderia ser usado, mas não é o recomendado.
