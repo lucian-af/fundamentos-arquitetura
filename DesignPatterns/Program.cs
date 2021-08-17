@@ -1,12 +1,13 @@
 ﻿using System;
 using DesignPatterns.Abstract.Factory;
 using DesignPatterns.Adapter;
+using DesignPatterns.Behavioral.Observable;
+using DesignPatterns.Behavioral.Strategy;
 using DesignPatterns.Command;
+using DesignPatterns.Composite;
 using DesignPatterns.Facade;
 using DesignPatterns.Factory.Method;
-using DesignPatterns.Observable;
 using DesignPatterns.Singleton;
-using DesignPatterns.Strategy;
 
 namespace DesignPatterns
 {
@@ -26,12 +27,13 @@ namespace DesignPatterns
             Console.WriteLine("------------------------");
             Console.WriteLine("4 - Adapter");
             Console.WriteLine("5 - Facade");
+            Console.WriteLine("6 - Composite");
             Console.WriteLine("------------------------");
             Console.WriteLine("Padrões Comportamentais");
             Console.WriteLine("------------------------");
-            Console.WriteLine("6 - Command");
-            Console.WriteLine("7 - Strategy");
-            Console.WriteLine("8 - Observer");
+            Console.WriteLine("7 - Command");
+            Console.WriteLine("8 - Strategy");
+            Console.WriteLine("9 - Observer");
             Console.WriteLine("------------------------");
 
             var opcao = Console.ReadKey();
@@ -56,9 +58,10 @@ namespace DesignPatterns
                 case '3': ExecutarSingleton.Executar(); break;
                 case '4': ExecutarAdapter.Executar(); break;
                 case '5': ExecutarFacade.Executar(); break;
-                case '6': ExecutarCommand.Executar(); break;
-                case '7': ExecutarStrategy.Executar(); break;
-                case '8': ExecutarObservable.Executar(); break;
+                case '6': ExecutarComposite.Executar(); break;
+                case '7': ExecutarCommand.Executar(); break;
+                case '8': ExecutarStrategy.Executar(); break;
+                case '9': ExecutarObservable.Executar(); break;
             };
         }
     }
